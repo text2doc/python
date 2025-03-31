@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     use_scm_version={
@@ -8,6 +8,8 @@ setup(
         "local_scheme": "node-and-date",
     },
     setup_requires=["setuptools_scm"],
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
 )
 
 
