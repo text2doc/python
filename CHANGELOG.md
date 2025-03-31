@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.8] - 2025-03-31
+
+### Added
+- Changes in AUTHORS.txt
+- Changes in CLASSIFIERS.txt
+- Changes in SCRIPTS.txt
+
+### Removed
+- Changes in setup.cfg
+
 ## [0.1.7] - 2025-03-31
 
 ## [0.1.6] - 2025-03-31
