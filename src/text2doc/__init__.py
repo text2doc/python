@@ -8,7 +8,7 @@ text2doc implements a virtual file system in memory. This module provides an int
 # Avoid importing components directly to prevent circular imports
 from text2doc.text2doc import text2doc
 
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 __version_tuple__ = (0, 1, 1, 'dev1', 'g4306cca.d20241124')
 
 __all__ = ["text2doc"]
