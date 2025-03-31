@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.3] - 2025-03-31
+
+### Added
+- Changes in src/text2doc/_version.py
+
 ## [0.1.2] - 2025-03-31
 
 ### Added
