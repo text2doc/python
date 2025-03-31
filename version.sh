@@ -28,6 +28,9 @@ done
 echo "New version: $new_version"
 
 
+# Update version in _version.py
+./increment_version.py
+./increment_setup.py
 
 # Commit changes
 echo "Publishing new version to GitHub..."
