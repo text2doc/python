@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "text2doc"
-# version = "0.1.8" # Remove the static version
-dynamic = ["version", "authors", "classifiers", "scripts"]
+dynamic = ["version", "classifiers"]
 description = "Generate grpc API Service based on function"
 readme = "README.md"
 requires-python = ">=3.11"
+license = { file = "LICENSE" }
 dependencies = [
     "grpcio==1.59.3",
     "grpcio-tools==1.59.3",
@@ -21,16 +21,14 @@ dependencies = [
 "Homepage" = "https://github.com/text2doc/python"
 
 [tool.setuptools]
+package-dir = {"" = "src"}
 packages = ["text2doc"]
 
 [tool.setuptools.package-data]
 "text2doc" = ["py.typed"]
 
 [tool.setuptools.dynamic]
-authors = {file = "AUTHORS.txt"}
 classifiers = {file = "CLASSIFIERS.txt"}
-scripts = {file = "SCRIPTS.txt"}
-version = {attr = "text2doc._version.__version__"}
 
 [tool.setuptools_scm]
 write_to = "src/text2doc/_version.py"
