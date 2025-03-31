@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.12] - 2025-03-31
+
+### Added
+- Changes in setup.cfg
+
 ## [0.1.11] - 2025-03-31
 
 ### Added
