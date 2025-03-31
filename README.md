@@ -1,2 +1,1 @@
-# python
-python.text2doc.com
+# python.text2doc.com
