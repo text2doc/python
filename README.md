@@ -8,6 +8,8 @@ rm -rf build/ dist/ *.egg-info/
 
 # Build the package
 python -m pip install --upgrade pip build
+pip install --upgrade setuptools
+
 python -m build
 
 # Publish to PyPI (if needed)
