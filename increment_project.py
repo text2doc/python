@@ -30,8 +30,8 @@ def get_version_from_file(file_path):
     try:
         with open(file_path, 'r') as file:
             content = file.read()
-            # Look for __version__ = "x.y.z" pattern
-            version_match = re.search(r'__version__\s*=\s*["\']([^"\']+)["\']', content)
+            # Look for version = "x.y.z" pattern
+            version_match = re.search(r'version\s*=\s*["\']([^"\']+)["\']', content)
             if version_match:
                 return version_match.group(1)
     except FileNotFoundError:
@@ -141,7 +141,7 @@ def update_version_in_init(file_path, increment_type="patch", backup=True):
                 file.write(content)
 
         # Replace version in file
-        pattern = r'(__version__\s*=\s*["\'])([^"\']+)(["\'])'
+        pattern = r'(version\s*=\s*["\'])([^"\']+)(["\'])'
         replacement = r'\g<1>' + new_version + r'\g<3>'
         new_content = re.sub(pattern, replacement, content)
 
@@ -179,7 +179,7 @@ def main():
 
     args = parser.parse_args()
 
-    file_name = "src/text2doc/_version.py"
+    file_name = "pyproject.toml"
     file_path = "./" + file_name
     current_version = get_version_from_file(file_path)
     updated_versions = []

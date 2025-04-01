@@ -2,6 +2,11 @@
 
 * Version bump
 
+## [0.1.14] - 2025-04-01
+
+### Added
+- Changes in increment_project.py
+
 # 0.1.13 (2025-03-31)
 
 * Version bump
