@@ -16,6 +16,9 @@ python -m build
 python -m pip install --upgrade twine
 python -m twine upload dist/*
 
+python -m venv venv
+source venv/bin/activate
+
 ```
 
 Clean up the build artifacts and rebuild
