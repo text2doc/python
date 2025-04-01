@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="text2doc",
-    version="0.1.15",
+    version="0.1.16",
     description="Convert text to formatted documents",
     author="Tom Softreck",
     author_email="info@softreck.dev",
